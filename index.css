@@ -282,6 +282,68 @@ footer h4{
     font-size: 2.8vw;
   }
   
+  #rubrik-main{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 20px;
+  }
+  #stycke-main{
+    font-size: 1.3rem;
+    line-height: 23px;
+    
+  }
+
+ .grid-main{
+   display:flex;
+   
+ }
+ .develop{
+   margin-top: 0;
+   display:inline-block;
+   flex-grow: 1;
+ }
+ .develop h6{
+   margin: auto;
+ }
+ .img-dev{
+   display:flex;
+ }
+ .img-dev img{
+   margin: auto;
+ }
+ .verksam{
+   margin-top: 0;
+   display:inline-block;
+   flex-grow: 1;
+ }
+ .verksam h6{
+   margin: auto;
+ }
+ .verksam-img{
+   display: flex;
+ }
+ .verksam-img img{
+   margin:auto;
+ }
+ .test{
+   margin-top: 0;
+   display:inline-block;
+   flex-grow: 1;
+ }
+ .test h6{
+   margin: auto;
+ }
+ .test-img{
+   display: flex;
+ }
+ .test-img img{
+   margin:auto;
+ }
+ .Bild{
+   max-height: 180px;
+   max-width: 200px;
+ }
+  
 }
 
 
