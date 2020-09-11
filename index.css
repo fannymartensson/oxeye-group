@@ -150,6 +150,8 @@ max-height: 80px;
   "1"
   "2"
   "3";
+  grid-gap: 50px;
+  margin-top: 40px;
 }
 
 .develop{
