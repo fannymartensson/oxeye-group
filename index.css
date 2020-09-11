@@ -150,13 +150,12 @@ max-height: 80px;
   "1"
   "2"
   "3";
-  grid-gap: 50px;
-  margin-top: 40px;
 }
 
 .develop{
   grid-area: 1;
   display:flex;
+  margin-top: 40px;
 }
 
 .dev-container{
@@ -170,6 +169,7 @@ max-height: 80px;
 .verksam{
   grid-area: 2;
   display:flex;
+  margin-top: 40px;
 }
 
 .verksam-container{
@@ -184,6 +184,7 @@ max-height: 80px;
 .test{
   grid-area: 3;
   display:flex;
+  margin-top: 40px;
 }
 .test h6{
   margin-left: 8px;
