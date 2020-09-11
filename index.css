@@ -145,7 +145,7 @@ max-height: 80px;
 /* Våra tjänster grid*/
 .grid-main{
   display:grid;
-  grid-template-rows: 20px, 1fr, 1fr;
+  grid-template-rows: 1fr 100px 1fr;
   grid-template-areas: 
   "1"
   "2"
