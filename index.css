@@ -232,6 +232,9 @@ footer h4{
 
 /* Storleksanpassning header desktop */
 @media (min-width: 1000px){
+  .m-body{
+    grid-template-rows: 80px 400px 600px 400px;
+  }
   nav{
     display:flex;
     flex-direction:row-reverse;
