@@ -110,6 +110,14 @@ h1{
   border-radius: 40px;
   margin-left: 10px;
 }
+header img{
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+  max-width: 500px;
+  left: 650px;
+
+}
 
 /* Våra tjänster */
 
@@ -222,7 +230,7 @@ footer h4{
 
 }
 
-/* Storleksanpassning nav */
+/* Storleksanpassning header desktop */
 @media (min-width: 1000px){
   nav{
     display:flex;
@@ -261,27 +269,35 @@ footer h4{
     padding: 40px;
     
   }
- 
-}
-
-/* Storleksanpassning header desktop */
-
-@media(min-width: 1100px){
-  header {
-
-    padding-right: 42em;
+ header {
+    padding-left: 60px;
+    padding-right: 50%;
     
   }
-
+  
+  header h1{
+    font-size: 3.2vw;
+  }
   
 }
+
+
 /* Storleksanpassning header tablet */
 
-@media(max-width: 1100px) and (min-width: 760px){
+@media(max-width: 1000px) and (min-width: 700px){
   header {
-
-    padding-right: 20em;
-    
+    padding-right: 50%;
+     
   }
+}
+/* Anpassning startbild */
+}
+
+@media(max-width: 1000px) and (min-width: 0px){
+header img{
+    display: none;
+    
+}
+  
 }
 
