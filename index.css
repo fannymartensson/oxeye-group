@@ -1,0 +1,284 @@
+.m-body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 40px 400px 600px 400px;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: 
+  "nav"
+  "header"
+  "main"
+  "footern";
+
+}
+
+/* Navigation */
+nav{
+  grid-area: nav;
+}
+/* Dropdown menu */
+.drop-btn{
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 10px;
+ 
+}
+.drop-btn div{
+  height: 3px;
+  width: 35px;
+  background-color: #28afa7;
+  margin: 5px 0;
+}
+ 
+.drop-menu{
+  height: 40px;
+  width: 40px;
+  position: relative;
+  display: inline-block;
+}
+ 
+.drop-content{
+  margin-top: 4px;
+  margin-left: 5px;
+  padding-left: 5px;
+  display:none;
+  width: 170px;
+  background-color: #28afa7;
+  border-radius: 4%;
+  }
+ 
+.drop-content a{
+  padding-top: 5px;
+  margin-top: 4px;
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+ 
+.drop-menu:hover .drop-content{
+  display:block;
+}
+.drop-content a:hover{
+  font-weight: 700;
+ 
+}
+/* logo nav */
+a img{
+  height: 40px;
+  position: absolute;
+  margin-left: 20px;
+}
+
+header{
+  grid-area: header;
+  background-color:#E2F0E8;
+  margin-top: 10px;
+  padding-top: 10px;
+  
+  
+}
+
+h1{
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-right: 80px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+#stycke-header{
+  line-height: 23px;
+  padding-right: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+ 
+}
+
+/* Knapp headern */
+#Registrera-dig{ 
+  background-color: #28AFA7; 
+  border: none;
+  color:#000000;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 40px;
+  margin-left: 10px;
+}
+
+/* Våra tjänster */
+
+main{ 
+  grid-area: main;
+padding-left: 10px;
+
+}
+
+.text1{
+  font-size: 16px;
+  text-align: center;
+  padding: 9px;
+  width:max-content;
+  height: max-content;
+  background-color: #28AFA7;
+  border-radius: 40px;
+}
+
+.Bild{
+max-width: 100px;
+max-height: 80px;
+
+}
+
+#rubrik-main{
+  font-weight: 500;
+  padding-top: 20px;
+}
+#stycke-main{
+  line-height: 23px;
+}
+/* Våra tjänster grid*/
+.grid-main{
+  display:grid;
+  grid-template-rows: 20px, 1fr, 1fr;
+  grid-template-areas: 
+  "1"
+  "2"
+  "3";
+}
+
+.develop{
+  grid-area: 1;
+  display:flex;
+}
+
+.dev-container{
+  display:flex;
+  flex-direction: column;
+}
+.dev-container h6{
+  margin: 0;
+}
+
+.verksam{
+  grid-area: 2;
+  display:flex;
+}
+
+.verksam-container{
+  margin-top: 4px;
+  display:flex;
+  flex-direction: column;
+}
+.verksam-container h6{
+  margin: 0;
+}
+
+.test{
+  grid-area: 3;
+  display:flex;
+}
+.test h6{
+  margin-left: 8px;
+}
+/* Footern */
+
+footer{
+  grid-area: footern;
+  background-color:#E2F0E8;
+  padding-left: 10px;
+}
+
+footer h2{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+footer h4{
+  font-weight: 200;
+}
+
+
+
+/* Knapp footern */
+#Skicka-förfrågan{
+ background-color: #28AFA7; 
+  border: none;
+  color:#000000;
+  padding: 10px 12px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 40px;
+
+}
+
+/* Storleksanpassning nav */
+@media (min-width: 1000px){
+  nav{
+    display:flex;
+    flex-direction:row-reverse;
+  }
+  nav a{
+   flex-grow:1; 
+  }
+  a img {
+    margin-left: 0;
+       height: 10vh;
+  }
+  .drop-btn{
+    display:none;
+    
+  }
+  disable > .drop-menu:hover .drop-content{
+    display:none;
+  }
+  .drop-menu{
+    width: initial;
+    height: inherit;
+    
+    
+  }
+  .drop-content{
+    display:block;
+    width: 500px;
+    margin: 20px;
+    background-color: white;
+    
+    
+  }
+  .drop-content a{
+    display:inline;
+    padding: 40px;
+    
+  }
+ 
+}
+
+/* Storleksanpassning header desktop */
+
+@media(min-width: 1100px){
+  header {
+
+    padding-right: 42em;
+    
+  }
+
+  
+}
+/* Storleksanpassning header tablet */
+
+@media(max-width: 1100px) and (min-width: 760px){
+  header {
+
+    padding-right: 20em;
+    
+  }
+}
+
