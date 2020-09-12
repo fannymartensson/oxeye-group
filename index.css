@@ -18,26 +18,24 @@ nav{
 }
 /* Dropdown menu */
 .drop-btn{
-  cursor: pointer;
+  display:inline-block;
+}
+.drop-btn > div{
+  width: 35px;
   margin-left: 5px;
   margin-top: 10px;
- 
 }
-.drop-btn div{
+.drop-btn div > div{
   height: 3px;
   width: 35px;
   background-color: #28afa7;
   margin: 5px 0;
 }
- 
-.drop-menu{
-  height: 40px;
-  width: 40px;
-  position: relative;
-  display: inline-block;
+input[type="checkbox"]{
+  display:none;
 }
- 
-.drop-content{
+ul{
+  list-style-type: none;
   margin-top: 4px;
   margin-left: 5px;
   padding-left: 5px;
@@ -45,23 +43,22 @@ nav{
   width: 170px;
   background-color: #28afa7;
   border-radius: 4%;
-  }
- 
-.drop-content a{
-  padding-top: 5px;
+}
+li a{
+
+  padding: 5px;
   margin-top: 4px;
   display: block;
   text-decoration: none;
   font-size: 1.5rem;
   color: black;
 }
- 
-.drop-menu:hover .drop-content{
+input[type="checkbox"]:checked ~ ul{
   display:block;
-}
-.drop-content a:hover{
-  font-weight: 700;
- 
+  position: absolute;
+  padding-left: 0;
+  background-color: #28AFA7;
+
 }
 /* logo nav */
 a img{
