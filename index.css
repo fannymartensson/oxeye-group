@@ -651,12 +651,11 @@ header {
 main {
     padding-left: 60px;
     
-    
   }
 
   #rubrik-main{
-    font-size: 2vw;
-    font-weight: 700;
+    font-size: 1.5vw;
+    font-weight: 500;
     padding-top: 30px;
   }
   #stycke-main{
