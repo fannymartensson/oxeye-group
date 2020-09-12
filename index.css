@@ -374,6 +374,15 @@ main {
  #grid-footer{
    display: flex;
    flex-grow: 1;
+
+ }
+#kontakta-oss{
+  margin: auto;
+ 
+}
+ #om-oxeyegroup{
+  
+   margin: auto;
  }
 
 #socials{
@@ -406,6 +415,23 @@ main {
   #stycke-main{
     font-size: 15px;
   }
+ #grid-footer{
+   display: flex;
+   flex-grow: 1;
+
+ }
+#kontakta-oss{
+  margin: auto;
+ 
+}
+ #om-oxeyegroup{
+  
+   margin: auto;
+ }
+
+#socials{
+  text-align: center;
+}
 }
 /* Anpassning startbild för mobil*/
 
@@ -420,5 +446,4 @@ header button{
 }
 
 }
-
 
