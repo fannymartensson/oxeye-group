@@ -649,13 +649,13 @@ header {
   }
   
 main {
-  font-size: 15px;
+  
     padding-left: 60px;
     
   }
 
   #rubrik-main{
-    font-size: 2rem;
+    font-size: 15px;
     font-weight: 500;
     padding-top: 30px;
   }
