@@ -1,366 +1,3 @@
-
-.m-body{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0;
-  display: grid;
-  grid-template-rows: 40px 450px 600px 1fr;
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-areas: 
-  "nav"
-  "header"
-  "main"
-  "footern";
-
-}
-
-/* Navigation */
-nav{
-  grid-area: nav;
-}
-/* Dropdown menu */
-.drop-btn{
-  display:inline-block;
-}
-.drop-btn > div{
-  width: 35px;
-  margin-left: 5px;
-  margin-top: 10px;
-}
-.drop-btn div > div{
-  height: 3px;
-  width: 35px;
-  background-color: #28afa7;
-  margin: 5px 0;
-}
-input[type="checkbox"]{
-  display:none;
-}
-ul{
-  list-style-type: none;
-  margin-top: 4px;
-  margin-left: 5px;
-  padding-left: 5px;
-  display:none;
-  width: 170px;
-  background-color: #28afa7;
-  border-radius: 4%;
-}
-li a{
-
-  padding: 5px;
-  margin-top: 4px;
-  display: block;
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: black;
-}
-input[type="checkbox"]:checked ~ ul{
-  display:block;
-  position: absolute;
-  padding-left: 0;
-  background-color: #28AFA7;
-
-}
-/* logo nav */
-a img{
-  height: 40px;
-  position: absolute;
-  margin-left: 20px;
-}
-
-header{
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr auto;
-  grid-template-areas: 
-  "rubrik bild"
-  "text bild"
-  "knapp bild";
-  grid-area: header;
-  background-color:#E2F0E8;
-  margin-top: 10px;
-  padding-top: 10px;
-  
-  
-}
-
-
-h1{
-   grid-area: rubrik;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding-right: 80px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  
-}
-
-#stycke-header{
-  grid-area: text;
-  line-height: 23px;
-  padding-right: 20px;
-  padding-left: 10px;
-  padding-bottom: 10px;
- 
-}
-
-header img{
-  max-width: 500px;
-  grid-area: bild;
-}
-
-/* Knapp headern */
-#Registrera-dig{ 
-  grid-area: knapp;
-  background-color: #28AFA7; 
-  border: none;
-  color:#000000;
-  padding: 15px 30px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 700;
-  border-radius: 40px;
-  margin-left: 10px;
-  
-  
- 
-}
-
-
-/* Våra tjänster */
-
-main{ 
-  grid-area: main;
-padding-left: 10px;
-
-}
-
-.text1{
-  font-size: 16px;
-  text-align: center;
-  padding: 9px;
-  width:max-content;
-  height: max-content;
-  background-color: #28AFA7;
-  border-radius: 40px;
-}
-
-.Bild{
-max-width: 100px;
-max-height: 80px;
-
-}
-
-#rubrik-main{
-  font-weight: 500;
-  padding-top: 20px;
-}
-#stycke-main{
-  line-height: 23px;
-}
-/* Våra tjänster grid*/
-.grid-main{
-  display:grid;
-  grid-template-rows: 1fr 100px 1fr;
-  grid-template-areas: 
-  "1"
-  "2"
-  "3";
-}
-
-.develop{
-  grid-area: 1;
-  display:flex;
-  margin-top: 40px;
-}
-
-.dev-container{
-  display:flex;
-  flex-direction: column;
-}
-.dev-container h6{
-  margin: 0;
-}
-
-.verksam{
-  grid-area: 2;
-  display:flex;
-  margin-top: 40px;
-}
-
-.verksam-container{
-  margin-top: 4px;
-  display:flex;
-  flex-direction: column;
-}
-.verksam-container h6{
-  margin: 0;
-}
-
-.test{
-  grid-area: 3;
-  display:flex;
-  margin-top: 40px;
-}
-.test h6{
-  margin-left: 8px;
-}
-/* Footern */
-
-footer{
-  grid-area: footern;
-  background-color:#E2F0E8;
-  padding-left: 10px;
-}
-
-footer h2{
-  font-size: 30px;
-  font-weight: 400;
-}
-
-footer h4{
-  font-weight: 200;
-}
-
-
-
-/* Knapp footern */
-#Skicka-förfrågan{
- background-color: #28AFA7; 
-  border: none;
-  color:#000000;
-  padding: 10px 12px;
-  text-align: center;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 40px;
-
-}
-
-/* Storleksanpassning header desktop */
-@media (min-width: 1000px){
-  .m-body{
-    grid-template-rows: 80px 400px 600px 400px;
-  }
-  nav{
-    display:flex;
-    flex-direction:row-reverse;
-  }
-  nav a{
-   flex-grow:1; 
-  }
-  a img {
-    margin-left: 0;
-       height: 10vh;
-  }
-  .drop-btn{
-    display:none;
-    
-  }
-  disable > .drop-menu:hover .drop-content{
-    display:none;
-  }
-  .drop-menu{
-    width: initial;
-    height: inherit;
-    
-    
-  }
-  .drop-content{
-    display:block;
-    width: 500px;
-    margin: 20px;
-    background-color: white;
-    
-    
-  }
-  .drop-content a{
-    display:inline;
-    padding: 40px;
-    
-  }
- header {
-    padding-left: 60px;
-    
-    
-  }
-  header button{
-     max-width: 180px;
-     max-height: 50px;
-
-  }
-  header h1{
-    font-size: 2.8vw;
-  }
-  
-  #rubrik-main{
-    font-size: 2rem;
-    font-weight: 700;
-    padding-top: 20px;
-  }
-  #stycke-main{
-    font-size: 1.3rem;
-    line-height: 23px;
-    
-  }
-
- .grid-main{
-   display:flex;
-   
- }
- .develop{
-   margin-top: 0;
-   display:inline-block;
-   flex-grow: 1;
- }
- .develop h6{
-   margin: auto;
- }
- .img-dev{
-   display:flex;
- }
- .img-dev img{
-   margin: auto;
- }
- .verksam{
-   margin-top: 0;
-   display:inline-block;
-   flex-grow: 1;
- }
- .verksam h6{
-   margin: auto;
- }
- .verksam-img{
-   display: flex;
- }
- .verksam-img img{
-   margin:auto;
- }
- .test{
-   margin-top: 0;
-   display:inline-block;
-   flex-grow: 1;
- }
- .test h6{
-   margin: auto;
- }
- .test-img{
-   display: flex;
- }
- .test-img img{
-   margin:auto;
- }
- .Bild{
-   max-height: 180px;
-   max-width: 200px;
- }
-  
-}
-
-
 .m-body{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
@@ -574,11 +211,27 @@ max-height: 80px;
 /* Footern */
 
 footer{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1frx 1fr;
+  
+  grid-template-areas: 
+  "Kontaktaoss"
+  "Omoxeyegroup"
+  "socials";
   grid-area: footern;
   background-color:#E2F0E8;
   padding-left: 10px;
 }
-
+#kontakta-oss{
+  grid-area: Kontaktaoss;
+}
+#om-oxeyegroup{
+  grid-area: Omoxeyegroup;
+}
+#socials{
+  grid-area: socials;
+}
 footer h2{
   font-size: 30px;
   font-weight: 400;
@@ -649,14 +302,14 @@ header {
   }
   
 main {
-  
     padding-left: 60px;
+    
     
   }
 
   #rubrik-main{
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 2vw;
+    font-weight: 700;
     padding-top: 30px;
   }
   #stycke-main{
@@ -718,6 +371,14 @@ main {
    max-width: 200px;
  }
   
+ #grid-footer{
+   display: flex;
+   flex-grow: 1;
+ }
+
+#socials{
+  text-align: center;
+}
 }
 
 
@@ -759,4 +420,5 @@ header button{
 }
 
 }
+
 
