@@ -17,6 +17,9 @@ nav{
   grid-area: nav;
 }
 /* Dropdown menu */
+.nav-big{
+  display:none;
+}
 .drop-btn{
   display:inline-block;
 }
@@ -231,43 +234,28 @@ footer h4{
 @media (min-width: 1000px){
   .m-body{
     grid-template-rows: 80px 400px 600px 400px;
-  }
-  nav{
+ nav{
     display:flex;
-    flex-direction:row-reverse;
+    flex-direction:row;
   }
-  nav a{
-   flex-grow:1; 
+  .nav-img{
+    display:block;
+    flex-grow: 5;
   }
   a img {
     margin-left: 0;
-       height: 10vh;
+    height: 10vh;
   }
-  .drop-btn{
-    display:none;
-    
-  }
-  disable > .drop-menu:hover .drop-content{
-    display:none;
-  }
-  .drop-menu{
-    width: initial;
-    height: inherit;
-    
-    
-  }
-  .drop-content{
+  .nav-big{
     display:block;
-    width: 500px;
-    margin: 20px;
-    background-color: white;
-    
-    
+    flex-grow:1;
+    margin: auto;
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
   }
-  .drop-content a{
-    display:inline;
-    padding: 40px;
-    
+  .drop-btn, input[type="checkbox"], ul {
+    display:none;
   }
  header {
     padding-left: 60px;
