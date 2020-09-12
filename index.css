@@ -234,6 +234,7 @@ footer h4{
 @media (min-width: 1000px){
   .m-body{
     grid-template-rows: 80px 400px 600px 400px;
+  }
  nav{
     display:flex;
     flex-direction:row;
