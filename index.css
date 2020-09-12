@@ -71,6 +71,13 @@ a img{
 }
 
 header{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: 
+  "rubrik bild"
+  "text bild"
+  "knapp bild";
   grid-area: header;
   background-color:#E2F0E8;
   margin-top: 10px;
@@ -79,7 +86,9 @@ header{
   
 }
 
+
 h1{
+   grid-area: rubrik;
   font-size: 1.5rem;
   font-weight: 500;
   padding-right: 80px;
@@ -90,6 +99,7 @@ h1{
 }
 
 #stycke-header{
+  grid-area: text;
   line-height: 23px;
   padding-right: 20px;
   padding-left: 10px;
@@ -97,8 +107,14 @@ h1{
  
 }
 
+header img{
+  max-width: 500px;
+  grid-area: bild;
+}
+
 /* Knapp headern */
 #Registrera-dig{ 
+  grid-area: knapp;
   background-color: #28AFA7; 
   border: none;
   color:#000000;
@@ -109,14 +125,9 @@ h1{
   font-weight: 700;
   border-radius: 40px;
   margin-left: 10px;
-}
-header img{
-  position: absolute;
-  bottom: 70px;
-  right: 10px;
-  max-width: 500px;
-  left: 650px;
-
+  
+  
+ 
 }
 
 /* Våra tjänster */
@@ -255,12 +266,17 @@ footer h4{
   .drop-btn, input[type="checkbox"], ul {
     display:none;
   }
- header {
+    
+header {
     padding-left: 60px;
-    padding-right: 50%;
+    
     
   }
-  
+  header button{
+     max-width: 180px;
+     max-height: 50px;
+
+  }
   header h1{
     font-size: 2.8vw;
   }
@@ -332,20 +348,33 @@ footer h4{
 
 /* Storleksanpassning header tablet */
 
-@media(max-width: 1000px) and (min-width: 700px){
-  header {
-    padding-right: 50%;
-     
-  }
+@media(max-width: 1000px) and (min-width: 600px){
 
-/* Anpassning startbild */
+  header{
+      padding-right: 10%;
+      padding-left: 5%;
+  }
+  header button{
+    max-width: 200px;
+    max-height: 50px;
+  }
+  
+  header h1{
+    font-size: 30px;
+    padding-right: 30%;
+  }
 }
+/* Anpassning startbild för mobil*/
+
 
 @media(max-width: 1000px) and (min-width: 0px){
 header img{
-    display: none;
-    
+    display: none; 
 }
-  
+header button{
+  max-width: 180px;
+  max-height: 50px;
+}
+
 }
 
