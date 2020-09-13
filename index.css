@@ -34,10 +34,10 @@ nav{
   background-color: #28afa7;
   margin: 5px 0;
 }
-input[type="checkbox"]{
+nav input[type="checkbox"]{
   display:none;
 }
-ul{
+nav ul{
   list-style-type: none;
   margin-top: 4px;
   margin-left: 5px;
