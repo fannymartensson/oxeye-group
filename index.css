@@ -125,10 +125,15 @@ header img{
   font-weight: 700;
   border-radius: 40px;
   margin-left: 10px;
+  }
   
+  button a{
+  text-decoration: none;
+  color:black;
+}
   
  
-}
+
 
 /* Våra tjänster */
 
