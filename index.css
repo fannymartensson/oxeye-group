@@ -23,6 +23,7 @@ nav{
 .drop-btn{
   display:inline-block;
 }
+/* Styling dropdown button */
 .drop-btn > div{
   width: 35px;
   margin-left: 5px;
@@ -34,6 +35,7 @@ nav{
   background-color: #28afa7;
   margin: 5px 0;
 }
+/* Gömmer kontent i dropdown */
 nav input[type="checkbox"]{
   display:none;
 }
@@ -56,6 +58,7 @@ li a{
   font-size: 1.5rem;
   color: black;
 }
+/* visar kontent i dropdown */
 input[type="checkbox"]:checked ~ ul{
   display:block;
   position: absolute;
@@ -138,7 +141,7 @@ header img{
 padding-left: 10px;
 
 }
-
+/* "knapparna" med jobbtitlar i */
 .work-title{
   font-size: 16px;
   text-align: center;
@@ -253,6 +256,7 @@ footer h2{
   .m-body{
     grid-template-rows: 80px 400px 600px 400px;
   }
+  /* gör om nav till desktop */
  nav{
     display:flex;
     flex-direction:row;
@@ -265,6 +269,7 @@ footer h2{
     margin-left: 0;
     height: 10vh;
   }
+  /* Länkarna i desktop */
   .nav-big{
     display:block;
     flex-grow:0.5;
@@ -276,6 +281,7 @@ footer h2{
   a.nav-big:hover{
         border-bottom: 3px solid #28AFA7;
   }
+  /* tar bort mobil nav */
 .drop-btn, nav input[type="checkbox"], nav ul {
     display:none;
   }
@@ -313,7 +319,7 @@ header {
     padding-right: 500px;
     padding-bottom: 50px;
   }
-
+  /* gör om så flowet blir columns i main elementet */
  .grid-main{
    display:flex;  
  }
