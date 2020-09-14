@@ -221,7 +221,6 @@ footer{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1frx 1fr;
-  
   grid-template-areas: 
   "Kontaktaoss"
   "Omoxeyegroup"
@@ -230,6 +229,10 @@ footer{
   background-color:#E2F0E8;
   padding-left: 10px;
 }
+
+footer a{
+  color: #000000;
+  }
 #kontakta-oss{
   grid-area: Kontaktaoss;
 }
