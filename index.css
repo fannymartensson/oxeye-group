@@ -70,6 +70,7 @@ a img{
   margin-left: 20px;
 }    
 
+/* Header ink grid sektion */
 header{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -81,14 +82,12 @@ header{
   grid-area: header;
   background-color:#E2F0E8;
   margin-top: 10px;
-  padding-top: 10px;
-  
-  
+  padding-top: 10px;  
 }
 
-
+/* Header rubrik */
 h1{
-   grid-area: rubrik;
+  grid-area: rubrik;
   font-size: 1.5rem;
   font-weight: 500;
   padding-right: 80px;
@@ -97,7 +96,7 @@ h1{
   padding-bottom: 10px;
   
 }
-
+/* Header stycke */
 #stycke-header{
   grid-area: text;
   line-height: 23px;
@@ -106,7 +105,7 @@ h1{
   padding-bottom: 10px;
  
 }
-
+/* Header bild */
 header img{
   max-width: 500px;
   grid-area: bild;
@@ -131,9 +130,6 @@ header img{
   text-decoration: none;
   color:black;
 }
-  
- 
-
 
 /* Våra tjänster */
 
@@ -167,6 +163,7 @@ max-height: 80px;
 #stycke-main{
   line-height: 23px;
 }
+
 /* Våra tjänster grid*/
 .grid-main{
   display:grid;
@@ -217,6 +214,8 @@ max-height: 80px;
 .test p{
   margin-left: 8px;
 }
+
+/* Footer ink grid sektion */
 footer{
   display: grid;
   grid-template-columns: 1fr;
@@ -249,6 +248,7 @@ footer h2{
 
 
 /* Storleksanpassning header desktop */
+
 @media (min-width: 1000px){
   .m-body{
     grid-template-rows: 80px 400px 600px 400px;
@@ -279,16 +279,16 @@ footer h2{
 .drop-btn, nav input[type="checkbox"], nav ul {
     display:none;
   }
+  
 header {
-    padding-left: 40px;
-    
-    
+    padding-left: 40px;   
   }
+  
   header button{
      max-width: 180px;
      max-height: 50px;
-
   }
+  
   header h1{
     font-size: 2.8vw;
   }
@@ -298,9 +298,7 @@ header {
   }
   
 .main-index {
-    padding-left: 60px;
-    
-    
+    padding-left: 60px; 
   }
 
   #rubrik-main{
@@ -308,78 +306,91 @@ header {
     font-weight: 700;
     padding-top: 30px;
   }
+  
   #stycke-main{
     font-size: 16px;
     line-height: 23px;
     padding-right: 500px;
     padding-bottom: 50px;
-    
   }
 
  .grid-main{
-   display:flex;
-   
+   display:flex;  
  }
+  
  .develop{
    margin-top: 0;
    display:inline-block;
    flex-grow: 1;
  }
+  
  .develop p{
    margin: auto;
    margin-top: 2px;
  }
+  
  .img-dev{
    display:flex;
  }
+  
  .img-dev img{
    margin: auto;
  }
+  
  .verksam{
    margin-top: 0;
    display:inline-block;
    flex-grow: 1;
  }
+  
  .verksam p{
    margin: auto;
    margin-top: 2px;
  }
+  
  .verksam-img{
    display: flex;
  }
+  
  .verksam-img img{
    margin:auto;
  }
+  
  .test{
    margin-top: 0;
    display:inline-block;
    flex-grow: 1;
  }
+  
  .test p{
    margin: auto;
  }
+  
  .test-img{
    display: flex;
  }
+  
  .test-img img{
    margin:auto;
  }
+  
  .Bild{
    max-height: 180px;
    max-width: 200px;
  }
   
+ /* Footer expandering för desktop */
  #grid-footer{
    display: flex;
    flex-grow: 1;
 
  }
+  
 #kontakta-oss{
   margin: auto;
- 
 }
- #om-oxeyegroup{
   
+ #om-oxeyegroup{  
    margin: auto;
  }
 
@@ -413,6 +424,9 @@ header {
   #stycke-main{
     font-size: 15px;
   }
+  
+/* Footer expandering för tablet */
+  
  #grid-footer{
    display: flex;
    flex-grow: 1;
@@ -422,8 +436,7 @@ header {
   margin: auto;
  
 }
- #om-oxeyegroup{
-  
+ #om-oxeyegroup{  
    margin: auto;
  }
 
@@ -431,8 +444,8 @@ header {
   text-align: center;
 }
 }
-/* Anpassning startbild för mobil*/
 
+/* Anpassning för mobil*/
 
 @media(max-width: 1000px) and (min-width: 0px){
 header img{
