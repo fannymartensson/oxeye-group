@@ -68,12 +68,7 @@ a img{
   height: 40px;
   position: absolute;
   margin-left: 20px;
-}
-
-.nav-big a:hover{
-  border-bottom: 3px solid #28AFA7 ;
-}
-        
+}    
 
 header{
   display: grid;
@@ -269,11 +264,14 @@ footer h2{
   }
   .nav-big{
     display:block;
-    flex-grow:1;
+    flex-grow:0.5;
     margin: auto;
     text-decoration: none;
     color:black;
     font-size: 1.5rem;
+  }
+  a.nav-big:hover{
+        border-bottom: 3px solid #28AFA7;
   }
 .drop-btn, nav input[type="checkbox"], nav ul {
     display:none;
