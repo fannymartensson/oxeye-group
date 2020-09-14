@@ -70,7 +70,7 @@ a img{
   margin-left: 20px;
 }
 
-.nav-big a:hover{
+a.nav-big:hover{
   border-bottom: 3px solid #28AFA7 ;
 }
         
