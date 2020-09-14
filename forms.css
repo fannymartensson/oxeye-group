@@ -9,6 +9,7 @@ body{
   "main"
   "footer";
 }
+/* grid-selector */
 nav{
   grid-area: nav;
 }
@@ -19,7 +20,7 @@ main{
 footer{
   grid-area: footer;
 }
-
+/*List - utan prickar*/
 ul{
   list-style-type: none;
   padding-left: 0;
@@ -42,7 +43,7 @@ textarea{
 legend{
   font-size: 1.5rem;
 }
-
+/*Skicka in knapp*/
 button{
   background-color: #28AFA7;
   border: none;
@@ -55,13 +56,14 @@ button{
   border-radius: 40px;
   margin-top: 6px;
 }
-
+/* Gömmer forms */
 .f-tag, .k-ult{
   display:none;
 }
 #show-ftag, #show-kult{
   display:none;
 }
+/*Knapparna för att visa forms*/
 #expand{
   display:inline-block;
   background-color: #28AFA7;
@@ -78,13 +80,14 @@ button{
 #show-kult:checked ~ #expand{
   text-decoration: underline;
 }
+/* visa forms */
 #show-ftag:checked ~ .f-tag{
  display:initial;
 }
 #show-kult:checked ~ .k-ult{
   display:initial;
  }
-
+/* desktop anpassning */
 @media (min-width:1000px){
    body{
     grid-template-rows: 80px max-content 400px;
@@ -94,7 +97,7 @@ button{
     text-align: center;
   }
 }
-/* tablet */
+/* tablet anpassning */
 @media (min-width:768px) and (max-width:1000px){
   #expand{
     display:block;
