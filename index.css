@@ -70,6 +70,11 @@ a img{
   margin-left: 20px;
 }
 
+.nav-big a:hover{
+  border-bottom: 3px solid #28AFA7 ;
+}
+        
+
 header{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
