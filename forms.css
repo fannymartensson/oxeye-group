@@ -14,12 +14,10 @@ nav{
 }
 main{
   grid-area: main;
+  background-color:#E2F0E8;
 }
 footer{
   grid-area: footer;
-}
-fieldset, form{
-  background-color:#E2F0E8;
 }
 
 ul{
