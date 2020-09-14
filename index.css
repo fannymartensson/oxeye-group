@@ -242,9 +242,6 @@ footer h2{
   font-weight: 400;
 }
 
-footer h4{
-  font-weight: 300;
-}
 
 /* Storleksanpassning header desktop */
 @media (min-width: 1000px){
