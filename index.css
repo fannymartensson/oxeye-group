@@ -132,7 +132,7 @@ header img{
 
 /* Våra tjänster */
 
-main{ 
+.main-index{ 
   grid-area: main;
 padding-left: 10px;
 
