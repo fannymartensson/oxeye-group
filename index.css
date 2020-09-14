@@ -241,19 +241,6 @@ footer h4{
   font-weight: 300;
 }
 
-/* Knapp footern */
-#Skicka-förfrågan{
- background-color: #28AFA7;
- border: none;
- color:#000000;
- padding: 10px 12px;
- text-align: center;
- display: inline-block;
- font-size: 14px;
- font-weight: 700;
- border-radius: 40px;
-}
-
 /* Storleksanpassning header desktop */
 @media (min-width: 1000px){
   .m-body{
