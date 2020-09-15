@@ -9,9 +9,7 @@
   "header"
   "main"
   "footern";
-
 }
-
 /* Navigation */
 nav{
   grid-area: nav;
@@ -50,7 +48,6 @@ nav ul{
   border-radius: 4%;
 }
 li a{
-
   padding: 5px;
   margin-top: 4px;
   display: block;
@@ -64,7 +61,6 @@ input[type="checkbox"]:checked ~ ul{
   position: absolute;
   padding-left: 0;
   background-color: #28AFA7;
-
 }
 /* logo nav */
 a img{
@@ -73,7 +69,7 @@ a img{
   margin-left: 20px;
 }    
 
-/* Header ink grid sektion */
+/* Header ink. grid sektion */
 header{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -250,7 +246,7 @@ footer h2{
 }
 
 
-/* Storleksanpassning header desktop */
+/* Storleksanpassning desktop */
 
 @media (min-width: 1000px){
   .m-body{
@@ -385,7 +381,7 @@ header {
    max-width: 200px;
  }
   
- /* Footer expandering för desktop */
+ /* Footer expandering för desktop via flex */
  #grid-footer{
    display: flex;
    flex-grow: 1;
@@ -451,7 +447,7 @@ header {
 }
 }
 
-/* Anpassning för mobil*/
+/* Anpassning header grid area: bild och knapp för mobil*/
 
 @media(max-width: 1000px) and (min-width: 0px){
 header img{
