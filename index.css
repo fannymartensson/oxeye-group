@@ -124,6 +124,7 @@ header img{
   border-radius: 40px;
   margin-left: 10px;
   max-width: 120px;
+   max-height: 25px;
   text-decoration: none;
   color: black;
   }
