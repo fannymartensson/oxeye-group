@@ -123,12 +123,10 @@ header img{
   font-weight: 700;
   border-radius: 40px;
   margin-left: 10px;
-  }
-  
-  button a{
+  max-width: 120px;
   text-decoration: none;
-  color:black;
-}
+  color: black;
+  }
 
 /* Våra tjänster */
 
