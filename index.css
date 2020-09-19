@@ -1,3 +1,4 @@
+/* Grid sektion för body elementet */
 .m-body{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
@@ -87,7 +88,7 @@ header{
 /* Header rubrik */
 h1{
   grid-area: rubrik;
-  font-size: 1.5rem;
+  font-size: 30px;
   font-weight: 500;
   padding-right: 80px;
   padding-left: 10px;
@@ -148,11 +149,7 @@ padding-left: 10px;
   font-weight: 700;
 }
 
-.Bild{
-max-width: 100px;
-max-height: 80px;
 
-}
 
 #rubrik-main{
   font-weight: 500;
@@ -170,6 +167,7 @@ max-height: 80px;
   "1"
   "2"
   "3";
+  
 }
 
 .develop{
@@ -185,6 +183,7 @@ max-height: 80px;
 .dev-container p{
   margin: 0;
   margin-top: 2px;
+  margin-left: 10px;
   
 }
 
@@ -202,15 +201,16 @@ max-height: 80px;
 .verksam-container p{
   margin: 0;
   margin-top: 2px;
+  margin-left: 10px;
 }
 
 .test{
   grid-area: 3;
   display:flex;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 .test p{
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 /* Footer ink grid sektion */
@@ -225,6 +225,7 @@ footer{
   grid-area: footern;
   background-color:#E2F0E8;
   padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 footer a{
@@ -244,6 +245,10 @@ footer h2{
   font-weight: 400;
 }
 
+Footer h3{
+  font-weight: 400;
+  font-size: 25px;
+}
 
 /* Storleksanpassning desktop */
 
@@ -297,15 +302,13 @@ footer h2{
   #stycke-header{
     padding-right: 7vw;
   }
-  
-.main-index {
-    padding-left: 60px; 
-  }
+
 
   #rubrik-main{
     font-size: 2vw;
-    font-weight: 700;
+    font-weight: 600;
     padding-top: 30px;
+    padding-left: 40px;
   }
   
   #stycke-main{
@@ -313,6 +316,7 @@ footer h2{
     line-height: 23px;
     padding-right: 500px;
     padding-bottom: 50px;
+    padding-left: 40px;
   }
   /* gör om så flowet blir columns i main elementet */
  .grid-main{
@@ -323,21 +327,22 @@ footer h2{
    margin-top: 0;
    display:inline-block;
    flex-grow: 1;
+   margin: auto;
  }
   
  .develop p{
    margin: auto;
-   margin-top: 2px;
+   margin-top: 4px;
  }
   
  .img-dev{
    display:flex;
  }
-  
- .img-dev img{
-   margin: auto;
+ 
+ .img-dev picture{
+   margin:auto;
+   padding-bottom: 10px;
  }
-  
  .verksam{
    margin-top: 0;
    display:inline-block;
@@ -346,15 +351,16 @@ footer h2{
   
  .verksam p{
    margin: auto;
-   margin-top: 2px;
+   margin-top: 4px;
  }
   
  .verksam-img{
    display: flex;
  }
   
- .verksam-img img{
+ .verksam-img picture{
    margin:auto;
+   padding-bottom: 10px;
  }
   
  .test{
@@ -365,20 +371,19 @@ footer h2{
   
  .test p{
    margin: auto;
+   margin-top: 4px;
  }
   
  .test-img{
    display: flex;
  }
   
- .test-img img{
+ .test-img picture{
    margin:auto;
+   padding-bottom: 10px;
  }
   
- .Bild{
-   max-height: 180px;
-   max-width: 200px;
- }
+ 
   
  /* Footer expandering för desktop via flex */
  #grid-footer{
@@ -415,27 +420,94 @@ footer h2{
   }
   
   header h1{
-    font-size: 30px;
+    font-size: 33px;
     padding-right: 20%;
   }
-  .main-index{
-    padding-left: 30px;
-  }
 
+#rubrik-main{
+  font-size: 20px;
+  padding-left: 30px;
+}
   #stycke-main{
     font-size: 15px;
+    padding-left: 30px;
   }
+    /* gör om så flowet blir columns i main elementet */
+ .grid-main{
+   display:flex; 
+   padding-top: 80px; 
+ }
+  
+ .develop{
+   margin-top: 0;
+   display:inline-block;
+   flex-grow: 1;
+   margin: auto;
+ }
+  
+ .develop p{
+   margin: auto;
+   margin-top: 4px;
+ }
+  
+ .img-dev{
+   display:flex;
+ }
+ 
+ .img-dev picture{
+   margin:auto;
+   padding-bottom: 10px;
+ }
+ .verksam{
+   margin-top: 0;
+   display:inline-block;
+   flex-grow: 1;
+ }
+  
+ .verksam p{
+   margin: auto;
+   margin-top: 4px;
+ }
+  
+ .verksam-img{
+   display: flex;
+ }
+  
+ .verksam-img picture{
+   margin:auto;
+   padding-bottom: 10px;
+ }
+  
+ .test{
+   margin-top: 0;
+   display:inline-block;
+   flex-grow: 1;
+ }
+  
+ .test p{
+   margin: auto;
+   margin-top: 4px;
+ }
+  
+ .test-img{
+   display: flex;
+ }
+  
+ .test-img picture{
+   margin:auto;
+   padding-bottom: 10px;
+ }
+  
+ 
   
 /* Footer expandering för tablet */
   
- #grid-footer{
+#grid-footer{
    display: flex;
    flex-grow: 1;
-
  }
 #kontakta-oss{
   margin: auto;
- 
 }
  #om-oxeyegroup{  
    margin: auto;
@@ -444,6 +516,8 @@ footer h2{
 .socials{
   text-align: center;
 }
+
+
 }
 
 /* Anpassning header grid area: bild och knapp för mobil*/
@@ -457,5 +531,8 @@ header img{
   max-height: 25px;
 }
 
+
 }
+
+
 
