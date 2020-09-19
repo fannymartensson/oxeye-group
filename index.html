@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OXEYE GROUP</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="browser-icon-oxeyegroup.png" type="image/x-icon" />
 </head>
 
 <body class="m-body">
@@ -25,27 +26,34 @@
       <li><a href="#footer"> Kontakta oss</a></li>
     </ul>
     <a href="index.html" class="nav-img"><img src="logo-utan-backgrund-oxeyegroup.png" alt="logo"></a>
+
     <!-- Dator -->
     <a class="nav-big" href="forms.html">Registrera dig</a>
     <a class="nav-big" href="#footer"> Kontakta oss</a>
-  </nav>   
-                                      
+  </nav>
+
   <header>
     <h1>Vi matchar ihop konsulter mot rätt uppdrag och företag</h1>
     <p id="stycke-header">Vill du ingå i ett nätverk som specialiserar sig på att matcha ihop konsultermot rätt
-      uppdrag och företag? Som dessutom strävar efter att göra båda parter nöjda. Då borde du registrera dig hos oss redan idag!</p>
-    <a href="forms.html"id="Registrera-dig">Registrera dig</a>
-    <img src="bild-startsida.png" alt="bild startsida">
+      uppdrag och företag? Som dessutom strävar efter att göra båda parter nöjda. Då borde du registrera dig hos oss
+      redan idag!</p>
+    <a href="forms.html" id="Registrera-dig">Registrera dig</a>
+    <img src="bild-header.png" alt="bild-header">
   </header>
-                                                      
+
   <main class="main-index">
     <h2 id="rubrik-main">Våra tjänster</h2>
-    <p id="stycke-main">Erbjuder företag med varierande behov, konsulter med olika erfarenheter för att skapa perfekta matchningar.
+    <p id="stycke-main">Erbjuder företag med varierande behov, konsulter med olika erfarenheter för att skapa perfekta
+      matchningar.
     </p>
-   <div class="grid-main">
+    <div class="grid-main">
       <div class="develop">
         <div class="img-dev">
-          <img class="Bild" src="utvecklare.png" alt="utvecklare">
+          <picture>
+            <source media="(min-width: 800px)" srcset="utvecklare.png">
+            <source media="(max-width: 799px)" class="bild-mobil" srcset="utvecklare-mobil.png">
+            <img class="Bild" src="utvecklare.png" alt="utvecklare">
+          </picture>
         </div>
         <div class="dev-container">
           <p class="work-title">Backend utvecklare</p>
@@ -55,7 +63,11 @@
       </div>
       <div class="verksam">
         <div class="verksam-img">
-          <img class="Bild" src="verksamhetsutveckling.png" alt="verksamhetsutveckling">
+          <picture>
+            <source media="(min-width: 800px)" srcset="verksamhetsutveckling.png">
+            <source media="(max-width: 799px)" class="bild-mobil" srcset="verksamhetsutveckling-mobil.png">
+            <img class="Bild" src="verksamhetsutveckling.png" alt="verksamhetsutveckling">
+          </picture>
         </div>
         <div class="verksam-container">
           <p class="work-title">Mjukvarutestare</p>
@@ -64,13 +76,17 @@
       </div>
       <div class="test">
         <div class="test-img">
-          <img class="Bild" src="test.png" alt="test">
+          <picture>
+            <source media="(min-width: 800px)" srcset="test.png">
+            <source media="(max-width: 799px)" class="bild-mobil" srcset="test-mobil.png">
+            <img class="Bild" src="test.png" alt="test">
+          </picture>
         </div>
         <p class="work-title">Agile Coach</p>
       </div>
     </div>
   </main>
-                             
+
   <footer>
     <div id="grid-footer">
       <div id="kontakta-oss">
@@ -82,7 +98,8 @@
       <div id="om-oxeyegroup">
         <h3>OXEYE | GROUP</h3>
         <p>Plats:XXXXXXX</p>
-        <p>Allmänna frågor<p>
+        <p>Allmänna frågor
+        <p>
         <p>info@oxeyegroup.se</p>
       </div>
     </div>
